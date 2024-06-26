@@ -74,7 +74,6 @@ const app = new Elysia()
     // Create user in database
     const id = generateId(16);
     const passwordHash = await Bun.password.hash(password);
-    console.log(email, passwordHash);
     await db.insert(schema.user).values({
       id,
       email,
