@@ -1,9 +1,9 @@
 {
   "name": "mvp",
-  "version": "1.0.50",
+  "version": "0.1.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.tsx"
+    "dev": "bun run --watch src/index.tsx",
+    "generate": "bunx drizzle-kit generate"
   },
   "dependencies": {
     "@elysiajs/html": "^1.0.2",
@@ -11,11 +11,12 @@
     "@kitajs/html": "^4.1.0",
     "@lucia-auth/adapter-drizzle": "^1.0.7",
     "drizzle-orm": "^0.31.2",
-    "elysia": "latest",
-    "lucia": "^3.2.0"
+    "elysia": "^1.0.25",
+    "lucia": "^3.2.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
-    "bun-types": "latest",
+    "bun-types": "^1.1.17",
     "drizzle-kit": "^0.22.7"
   },
   "module": "src/index.js"
